@@ -1,0 +1,19 @@
+Introduction
+
+Extensibility on 'Products outside of the Household Essentials category.' and 'Domains beyond Walgreens.com.':
+    Creating a new Website object (see line 185 in index.js) use the following parammeters:
+
+        * URL
+        * Category
+        * Product Selector
+        * Amount of Products
+    
+    In the initialization of the Website object, the bot will make sure that the website is accesible, if not, the creation of the object will throw an error.
+
+    This parammeters helps the bot to get the exact details that it needs to find. It needs the exact name of the category so the .getByText() function will catch all the elements with that name and click each one, this structure makes the code more dynamic for other categories and even other websites.
+
+    The product selector (usually a class tag) is used to point directly to the target products by using locators function which grabs all with that class. In the core, the Website object has been designed to use that selector on any other websites.
+
+    Website class also have private methods. Since some websites share frontend frameworks and structures, creating methods to format the data by using switch statements helps future implementations as the software grows.
+
+    Product class initialization write on json file which acts like a database and outputs an array of objects exact as expected on the README.md description.

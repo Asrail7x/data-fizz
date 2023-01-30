@@ -1,0 +1,15 @@
+{
+  "name": "crawling",
+  "version": "1.0.0",
+  "description": "A coding exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crawl": "node index.js"
+  },
+  "author": "asrail7x",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.30.0"
+  }
+}
